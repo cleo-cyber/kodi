@@ -1,7 +1,7 @@
 import React from 'react'
-import OneBedroom from '../components/OneBedroom'
-import Single from '../components/SingleRooms'
-import ThreeBedrooms from '../components/ThreeBedrooms'
+import OneBedroom from '../components/Listings/OneBedroom'
+import Single from '../components/Listings/SingleRooms'
+import ThreeBedrooms from '../components/Listings/ThreeBedrooms'
 function Listings() {
   return (
     <div>
