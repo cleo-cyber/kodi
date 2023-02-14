@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import House1 from "../assets/House1.jpg"
-import House2 from "../assets/House2.jpg"
-import { Splide } from '@splidejs/react-splide'
+import House1 from "../../assets/House1.jpg"
+import House2 from "../../assets/House2.jpg"
 import {Fade} from "react-reveal"
 function ThreeBedrooms() {
     const rooms = [{
