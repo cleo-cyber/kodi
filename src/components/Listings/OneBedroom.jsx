@@ -8,6 +8,7 @@ import { Fade } from 'react-reveal'
 
 function OneBedroom() {
     const rooms = [{
+        id:1,
         roomImage: House1,
         houseLocation: "Nairobi,Kenya",
         rent: 123454,
@@ -15,30 +16,35 @@ function OneBedroom() {
     },
 
     {
+        id:1,
         roomImage: House2,
         houseLocation: "Mombasa,Kenya",
         rent: 123454,
         distance: "4332 Kilometers away"
     },
     {
+        id:2,
         roomImage: House2,
         houseLocation: "Mombasa,Kenya",
         rent: 123454,
         distance: "4332 Kilometers away"
     },
     {
+        id:3,
         roomImage: House2,
         houseLocation: "Mombasa,Kenya",
         rent: 123454,
         distance: "4332 Kilometers away"
     },
     {
+        id:4,
         roomImage: House2,
         houseLocation: "Mombasa,Kenya",
         rent: 123454,
         distance: "4332 Kilometers away"
     },
     {
+        id:5,
         roomImage: House2,
         houseLocation: "Mombasa,Kenya",
         rent: 123454,
@@ -59,9 +65,9 @@ function OneBedroom() {
                 }>
                 {rooms.map((room) => {
                     return (
-                        <SplideSlide>
+                        <SplideSlide key={room.id}>
                               <Fade right>
-                            <Card>
+                            <Card >
                                 <div>
                                     <img src={room.roomImage} alt="" />
                                 </div>
