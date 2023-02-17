@@ -7,6 +7,7 @@ import '@splidejs/react-splide/css';
 import { Fade } from 'react-reveal'
 function SingleRooms() {
     const rooms = [{
+        id:1,
         roomImage: House1,
         houseLocation: "Nairobi,Kenya",
         rent: 123454,
@@ -14,30 +15,35 @@ function SingleRooms() {
     },
 
     {
+        id:2,
         roomImage: House2,
         houseLocation: "Mombasa,Kenya",
         rent: 123454,
         distance: "4332 Kilometers away"
     },
     {
+        id:3,
         roomImage: House2,
         houseLocation: "Mombasa,Kenya",
         rent: 123454,
         distance: "4332 Kilometers away"
     },
     {
+        id:4,
         roomImage: House2,
         houseLocation: "Mombasa,Kenya",
         rent: 123454,
         distance: "4332 Kilometers away"
     },
     {
+        id:5,
         roomImage: House2,
         houseLocation: "Mombasa,Kenya",
         rent: 123454,
         distance: "4332 Kilometers away"
     },
     {
+        id:6,
         roomImage: House2,
         houseLocation: "Mombasa,Kenya",
         rent: 123454,
@@ -58,9 +64,9 @@ function SingleRooms() {
                 }>
                 {rooms.map((room) => {
                     return (
-                        <SplideSlide>
+                        <SplideSlide key={room.id} >
                             <Fade top>
-                            <Card>
+                            <Card >
                                 <div>
                                     <img src={room.roomImage} alt="" />
                                 </div>

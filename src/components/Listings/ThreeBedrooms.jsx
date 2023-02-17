@@ -5,6 +5,7 @@ import House2 from "../../assets/House2.jpg"
 import {Fade} from "react-reveal"
 function ThreeBedrooms() {
     const rooms = [{
+        id:1,
         roomImage: House1,
         houseLocation: "Nairobi,Kenya",
         rent: 123454,
@@ -12,24 +13,28 @@ function ThreeBedrooms() {
     },
 
     {
+        id:2,
         roomImage: House2,
         houseLocation: "Mombasa,Kenya",
         rent: 123454,
         distance: "4332 Kilometers away"
     },
     {
+        id:3,
         roomImage: House2,
         houseLocation: "Mombasa,Kenya",
         rent: 123454,
         distance: "4332 Kilometers away"
     },
     {
+        id:4,
         roomImage: House2,
         houseLocation: "Mombasa,Kenya",
         rent: 123454,
         distance: "4332 Kilometers away"
     },
     {
+        id:5,
         roomImage: House2,
         houseLocation: "Mombasa,Kenya",
         rent: 123454,
@@ -51,7 +56,7 @@ function ThreeBedrooms() {
         {rooms.map((room)=>{
             return(
                 <Fade bottom>
-                <Card>
+                <Card key={room.id}>
                 <div>
                     <img src={room.roomImage} alt="" />
                 </div>
